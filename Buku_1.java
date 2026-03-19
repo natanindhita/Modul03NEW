@@ -17,6 +17,7 @@ class Buku {
 
         this.judul = hasil[0];
         this.penulis = new Penulis(hasil[1]);
+        this.sinopsis = hasil[2];
 
         br.close();
         
@@ -28,7 +29,7 @@ class Buku {
     void simpanFile(String namaFile) {
     try {
         java.io.FileWriter fw = new java.io.FileWriter(namaFile);
-        fw.write(judul + ";" + penulis.nama);
+        fw.write(judul + ";" + penulis.nama + ";" + sinopsis);
         fw.close();
         
         } catch (Exception e) {
