@@ -2,21 +2,21 @@ class Buku {
     String judul;
     String sinopsis;
     Penulis penulis;
-
-    String judul() {
-        return this.judul;
-    }
-    String sinopsis() {
-        return this.sinopsis;
-    }
-    String penulis() {
-        return this.penulis;
-    }
     
     Buku(String judul, String sinopsis, Penulis penulis) {
         this.judul = judul;
         this.sinopsis = sinopsis;
         this.penulis = penulis;
+    }
+
+    public String getJudul() {
+        return judul;
+    }
+    public String getSinopsis() {
+        return sinopsis;
+    }
+    public String getPenulis() {
+        return penulis.nama;
     }
     
     void bacaFile(String pathFile) {
