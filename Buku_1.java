@@ -2,6 +2,16 @@ class Buku {
     String judul;
     String sinopsis;
     Penulis penulis;
+
+    String judul() {
+        return this.judul;
+    }
+    String sinopsis() {
+        return this.sinopsis;
+    }
+    String penulis() {
+        return this.penulis;
+    }
     
     Buku(String judul, String sinopsis, Penulis penulis) {
         this.judul = judul;
