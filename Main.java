@@ -10,8 +10,6 @@ public class Main {
         Buku book2 = new Buku("", "", new Penulis(""));
         book2.bacaFile("book.txt");
         
-        book2.tampilkanBuku();
-        
         System.out.println("royalti 10%: " + book1.hitungRoyalti(100000));
         System.out.println("royalti 5%: " + book1.hitungRoyalti(100000, 5));
     }
