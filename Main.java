@@ -5,7 +5,6 @@ public class Main {
         
         Buku book1 = new Buku("Artificial Intelligence", "Buku ini membahas tentang AI", writer1);
         System.out.println(book1.getJudul());
-        System.out.println(book1.getSinopsis());
         System.out.println(book1.getPenulis());
         
         book1.simpanFile("book.txt");
